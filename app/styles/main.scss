@@ -3,3 +3,15 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
+
+body {
+    margin-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+// OVERRIDES ...
+.navbar {
+    border-radius: 0;
+}
