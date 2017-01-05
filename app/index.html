@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>portfolio</title>
+    <title>Phil Merrell - Portfolio</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -15,7 +15,8 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -31,82 +32,90 @@
     <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="/images/logo.JPG" height="40px" class="d-inline-block align-top" style="border-radius: 50%" alt="">
-          Bootstrap
+          <img src="/images/logo.JPG" height="30px" class="d-inline-block align-top" style="border-radius: 80%" alt="">
+          <span class="hero-font">Phil Merrell</span>
         </a>
       </div>  
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(images/mountain.jpg); background-size: cover;">
       <div class="container">
-        <h1>'Allo, 'Allo!</h1>
+        <h1 class="hero-font">Phil Merrell</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+        <p><a class="btn btn-lg btn-outline-info" href="#"><i class="fa fa-github" aria-hidden="true"></i> Github Profile</a></p>
       </div>
     </div>
     <div class="container">
         <div class="card-columns">
-  <div class="card">
-    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title that wraps to a new line</h4>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-  </div>
-  <div class="card card-block">
-    <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card card-block card-inverse card-primary text-xs-center">
-    <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-      <footer>
-        <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card card-block text-xs-center">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-  <div class="card">
-    <img class="card-img img-fluid" src="..." alt="Card image">
-  </div>
-  <div class="card card-block text-xs-right">
-    <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
-</div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Mock Event Planner</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+            </div>
+            <!--<img class="card-img-top img-fluid" src="images/event-planner.png" alt="Card image cap">-->
+            <div class="card-block">
+              <p class="card-text">Built a responsive web application that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>
+              <span class="tag tag-pill tag-default">Google Maps API</span>
+              <span class="tag tag-pill tag-primary">Angular 2</span>
+              <span class="tag tag-pill tag-success">Bootstrap 4</span>
+              <span class="tag tag-pill tag-info">Jasmine</span>
+            </div>
+          </div>
+          <div class="card card-block">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img class="card-img-top img-fluid" src="images/major-finder.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Boise State University: Major Finder</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card card-block card-inverse card-primary text-xs-center">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <footer>
+                <small>
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card card-block text-xs-center">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          <div class="card">
+            <img class="card-img img-fluid" src="..." alt="Card image">
+          </div>
+          <div class="card card-block text-xs-right">
+            <blockquote class="card-blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer>
+                <small class="text-muted">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card card-block">
+            <h4 class="card-title">Boise State University: myBoiseState Mobile</h4>
+            <p class="card-text">MyBoiseState Mobile is built for students and employees at Boise State University. It is a hybrid mobile application built with Ionic and is available on both the iOS AppStore and Google Play and leverages device features such as push notifications.
 
-        <div class="footer">
-          
+This app's primary purpose is to serve as a portal that ties data from many different sources across the university into a single, easy to use platform.</p>
+            <span class="tag tag-pill tag-default">Ionic</span>
+            <span class="tag tag-pill tag-primary">Angular</span>
+            <span class="tag tag-pill tag-success">iOS</span>
+            <span class="tag tag-pill tag-info">Android</span>
+          </div>
         </div>
       </div>
     </div>

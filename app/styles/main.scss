@@ -6,8 +6,11 @@ $icon-font-path: '../fonts/';
 
 body {
     margin-top: 50px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 
+.hero-font {
+    font-weight: 900;
 }
 
 
@@ -15,3 +18,10 @@ body {
 .navbar {
     border-radius: 0;
 }
+
+$brand-primary:             #02b3e4 !default;
+$brand-success:             #7d97ad !default;
+$brand-info:                #2d3c49 !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark !default;
