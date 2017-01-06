@@ -29,61 +29,109 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- Project Detail Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="form-control-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="form-control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="/images/logo.JPG" height="30px" class="d-inline-block align-top" style="border-radius: 80%" alt="">
-          <span class="hero-font">Phil Merrell</span>
+          <!--<img src="/images/logo.JPG" height="30px" class="d-inline-block align-top" style="border-radius: 80%" alt="">-->
+          <span class="hero-font">PHIL MERRELL</span>
         </a>
       </div>  
     </nav>
-    <div class="jumbotron jumbotron-fluid" style="background-image: url(images/mountain.jpg); background-size: cover;">
+    <div class="jumbotron jumbotron-fluid parallax-window">
       <div class="container">
-        <h1 class="display-3">Phil Merrell</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-outline-info" href="https://github.com/philmerrell" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github Profile</a></p>
+        <div class="row">
+            <image src="images/phil.png" height="80px" class="hero-image pull-left">
+            <h1 class="display-3">Phil Merrell</h1>
+        </div>
+        <p class="lead">I enjoy making user interfaces that interact with web apis across devices and platforms.</p>
+        <a class="btn btn-lg btn-outline-info" href="https://github.com/philmerrell" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github Profile</a>
       </div>
     </div>
     <div class="container">
-      <h3 class="hero-font">Featured Work</h3>
+      <h3 class="display-6">Featured Work</h3>
         <div class="card-columns">
           <div class="card">
+            <img class="card-img-top img-fluid" src="images/event-planner.png" alt="Image of mock event planner web site">
             <div class="card-block">
-              <h4 class="card-title">Mock Event Planner</h4>
+              <h4 class="card-title hero-font">Mock Event Planner</h4>
               <span class="tag tag-pill tag-default">Google Maps API</span>
               <span class="tag tag-pill tag-primary">Angular 2</span>
               <span class="tag tag-pill tag-success">Bootstrap 4</span>
               <span class="tag tag-pill tag-info">Jasmine</span>
-            <!--<img class="card-img-top img-fluid" src="images/event-planner.png" alt="Card image cap">-->
-              <p class="card-text">Built a responsive web application that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>
+              <!--<p class="card-text">Built a responsive web application toward the Udacity Senior Web Developer Nanodegree that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>-->
             </div>
+            <div class="card-block">
+              <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" type="button">
+                <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
+              </button>
+            </div>
+
           </div>
           <div class="card">
+            <img class="card-img-top img-fluid" src="images/movie-trailers.png" alt="Image of movie trailers web site">
             <div class="card-block">
-              <h4 class="card-title">Movie Trailer Website</h4>
+              <h4 class="card-title hero-font">Movie Trailer Website</h4>
               <span class="tag tag-pill tag-info">Python</span>
               <span class="tag tag-pill tag-default">JQuery</span>
               <span class="tag tag-pill tag-primary">TMDB API</span>
               <span class="tag tag-pill tag-success">Bootstrap 4</span>
-              <p class="card-text">Server-side code written in Python to store a list of movies currently in theatres, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>
-            </div>  
+              <!--<p class="card-text">Server-side code written in Python to call the Movie Database API and return a list of movies currently in theatres, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>-->
+            </div>
+            <div class="card-block">
+              <button class="btn btn-block btn-outline-primary" type="submit">
+                <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
+              </button>
+            </div>
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="images/major-finder.png" alt="Card image cap">
             <div class="card-block">
-              <h4 class="card-title">Boise State University: Major Finder</h4>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h4 class="card-title hero-font">Boise State University: Major Finder</h4>
+              <span class="tag tag-pill tag-info">AngularJS</span>
+              <span class="tag tag-pill tag-default">Material Design</span>
+              <span class="tag tag-pill tag-primary">Grunt</span>
+              <p class="card-text">Major Finder utilizes a client side build system via NPM, Bower and Grunt. Angular Material Design was used for many of the design components, which lend themselves well to both a desktop and mobile web experience.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
-          <div class="card card-block card-inverse card-primary text-xs-center">
+          <div class="card card-block card-inverse card-primary text-xs-right">
             <blockquote class="card-blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-              <footer>
+              <p>Frameworks like React and Angular have made it possible to create applications for web, mobile web, native mobile and even native desktop. I'm excited about the future of the web and I look forward to continue evolving and growing in the craft.</p>
+              <!--<footer>
                 <small>
                   Someone famous in <cite title="Source Title">Source Title</cite>
                 </small>
-              </footer>
+              </footer>-->
             </blockquote>
           </div>
           <div class="card card-block text-xs-center">
@@ -91,21 +139,11 @@
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
-          <div class="card">
+          <!--<div class="card">
             <img class="card-img img-fluid" src="..." alt="Card image">
-          </div>
-          <div class="card card-block text-xs-right">
-            <blockquote class="card-blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>
-                <small class="text-muted">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
+          </div>-->
           <div class="card card-block">
-            <h4 class="card-title">Boise State University: myBoiseState Mobile</h4>
+            <h4 class="card-title hero-font">Boise State University: myBoiseState Mobile</h4>
             <span class="tag tag-pill tag-default">Ionic</span>
             <span class="tag tag-pill tag-primary">Angular</span>
             <span class="tag tag-pill tag-success">iOS</span>
@@ -113,6 +151,11 @@
             <p class="card-text">MyBoiseState Mobile is built for students and employees at Boise State University. It is a hybrid mobile application built with Ionic and is available on both the iOS AppStore and Google Play and leverages device features such as push notifications.
 
 This app's primary purpose is to serve as a portal that ties data from many different sources across the university into a single, easy to use platform.</p>
+          </div>
+          <div class="card card-block text-xs-right">
+            <blockquote class="card-blockquote">
+              <p class="card-text">My passion is front end development, but I have contributed to a number of .NET, Python, PHP and ExpressJS back ends.</p>
+            </blockquote>
           </div>
         </div>
       </div>

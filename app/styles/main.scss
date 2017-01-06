@@ -13,10 +13,26 @@ body {
     font-weight: 900;
 }
 
+.hero-image {
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.parallax-window {
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+}
+
 
 // OVERRIDES ...
 .navbar {
     border-radius: 0;
+}
+
+.jumbotron {
+    h1, p {
+        text-shadow: 2px 2px 0 #fff;
+    }
 }
 
 $brand-primary:             #02b3e4 !default;
