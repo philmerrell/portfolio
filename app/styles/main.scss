@@ -35,9 +35,24 @@ body {
     }
 }
 
-$brand-primary:             #02b3e4 !default;
-$brand-success:             #7d97ad !default;
-$brand-info:                #2d3c49 !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
-$brand-inverse:             $gray-dark !default;
+.card-columns {
+    @include media-breakpoint-only(sm) {
+        column-count: 2;
+    }
+    @include media-breakpoint-only(md) {
+        column-count: 2;
+    }
+    @include media-breakpoint-only(lg) {
+        column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 3;
+    }
+}
+
+$brand-primary:             #02b3e4;
+$brand-success:             #7d97ad;
+$brand-info:                #2d3c49;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+$brand-inverse:             $gray-dark;
