@@ -24,7 +24,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -34,7 +34,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel"></h5>
+            <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
             <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
               <i class="fa fa-times" aria-hidden="true"></i>
             </button>
@@ -43,19 +43,44 @@
             <p class="description"></p>
           </div>
           <div class="modal-footer">
+            <a class="btn btn-info" href="https://github.com/philmerrell" target="_blank">
+              On Github <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-success" href="https://github.com/philmerrell" target="_blank">
+              View App <i class="fa fa-external-link-square" aria-hidden="true"></i>
+            </a>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
           </div>
         </div>
       </div>
     </div>
 
-    <nav class="navbar fixed-top navbar-inverse bg-primary">
+    <nav id="navbar" class="navbar fixed-top navbar-inverse bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="container">
         <a class="navbar-brand" href="#">
-          <!--<img src="/images/logo.JPG" height="30px" class="d-inline-block align-top" style="border-radius: 80%" alt="">-->
+          <img src="images/phil.png" height="40" class="d-inline-block align-top rounded-circle" alt="">
           <span class="hero-font">PHIL MERRELL</span>
         </a>
+        <div class="collapse navbar-collapse" iid="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured-work">Featured Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
       </div>  
     </nav>
 
@@ -63,7 +88,7 @@
       <div class="container">
         <div class="d-flex flex-row justify-content-start align-items-center">
           <div class="p-2">
-            <image src="images/phil.png" height="80px" class="hero-image">
+            <img src="images/phil.png" height="80" class="hero-image" alt="A picture of Phil Merrell">
           </div>
           <div class="p-2">
             <h1 class="display-4">Phil Merrell</h1>
@@ -75,89 +100,88 @@
     </div>
 
     <div class="container">
-      <h3 class="display-6">Featured Work</h3>
-        <div class="card-columns">
-          <div class="card">
-            <img class="card-img-top img-fluid" src="images/event-planner.png" alt="Image of mock event planner web site">
-            <div class="card-block">
-              <h4 class="card-title hero-font">Mock Event Planner</h4>
-              <span class="badge badge-pill badge-default">Google Maps API</span>
-              <span class="badge badge-pill badge-primary">Angular 2</span>
-              <span class="badge badge-pill badge-success">Bootstrap 4</span>
-              <span class="badge badge-pill badge-info">Jasmine</span>
-              <!--<p class="card-text">Built a responsive web application toward the Udacity Senior Web Developer Nanodegree that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>-->
-            </div>
-            <div class="card-block">
-              <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="0" type="button">
-                <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
-              </button>
-            </div>
+      <h3 id="featured-work" class="display-6">Featured Work</h3>
+      <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/event-planner.png" alt="Image of mock event planner web site">
+          <div class="card-block">
+            <h4 class="card-title hero-font">Mock Event Planner</h4>
+            <span class="badge badge-pill badge-default">Google Maps API</span>
+            <span class="badge badge-pill badge-primary">Angular 2</span>
+            <span class="badge badge-pill badge-success">Bootstrap 4</span>
+            <span class="badge badge-pill badge-info">Jasmine</span>
+            <!--<p class="card-text">Built a responsive web application toward the Udacity Senior Web Developer Nanodegree that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>-->
+          </div>
+          <div class="card-block">
+            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="0" type="button">
+              <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
+            </button>
+          </div>
 
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/movie-trailers.png" alt="Image of movie trailers web site">
+          <div class="card-block">
+            <h4 class="card-title hero-font">Movie Trailer Website</h4>
+            <span class="badge badge-pill badge-info">Python</span>
+            <span class="badge badge-pill badge-default">JQuery</span>
+            <span class="badge badge-pill badge-primary">TMDB API</span>
+            <span class="badge badge-pill badge-success">Bootstrap 4</span>
+            <!--<p class="card-text">Server-side code written in Python to call the Movie Database API and return a list of movies currently in theatres, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>-->
           </div>
-          <div class="card">
-            <img class="card-img-top img-fluid" src="images/movie-trailers.png" alt="Image of movie trailers web site">
-            <div class="card-block">
-              <h4 class="card-title hero-font">Movie Trailer Website</h4>
-              <span class="badge badge-pill badge-info">Python</span>
-              <span class="badge badge-pill badge-default">JQuery</span>
-              <span class="badge badge-pill badge-primary">TMDB API</span>
-              <span class="badge badge-pill badge-success">Bootstrap 4</span>
-              <!--<p class="card-text">Server-side code written in Python to call the Movie Database API and return a list of movies currently in theatres, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>-->
-            </div>
-            <div class="card-block">
-              <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="1" type="button">
-                <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
-              </button>
-            </div>
+          <div class="card-block">
+            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="1" type="button">
+              <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
+            </button>
           </div>
-          <div class="card">
-            <img class="card-img-top img-fluid" src="images/major-finder.png" alt="Card image cap">
-            <div class="card-block">
-              <h4 class="card-title hero-font">Boise State University: Major Finder</h4>
-              <span class="badge badge-pill badge-info">AngularJS</span>
-              <span class="badge badge-pill badge-default">Material Design</span>
-              <span class="badge badge-pill badge-primary">Grunt</span>
-              <!--<p class="card-text">Major Finder utilizes a client side build system via NPM, Bower and Grunt. Angular Material Design was used for many of the design components, which lend themselves well to both a desktop and mobile web experience.</p>-->
-              
-            </div>
-            <div class="card-block">
-              <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="2" type="button">
-                <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
-              </button>
-            </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/major-finder.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title hero-font">Boise State University: Major Finder</h4>
+            <span class="badge badge-pill badge-info">AngularJS</span>
+            <span class="badge badge-pill badge-default">Material Design</span>
+            <span class="badge badge-pill badge-primary">Grunt</span>
+            <!--<p class="card-text">Major Finder utilizes a client side build system via NPM, Bower and Grunt. Angular Material Design was used for many of the design components, which lend themselves well to both a desktop and mobile web experience.</p>-->
+            
           </div>
-          <div class="card card-block card-inverse card-primary text-xs-right">
-            <blockquote class="card-blockquote">
-              <p>Frameworks like React and Angular have made it possible to create applications for web, mobile web, native mobile and even native desktop. I'm excited about the future of the web and I look forward to continue evolving and growing in the craft.</p>
-              <!--<footer>
-                <small>
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>-->
-            </blockquote>
+          <div class="card-block">
+            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="2" type="button">
+              <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
+            </button>
           </div>
-          <div class="card card-block text-xs-center">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <div class="card card-block card-inverse card-primary text-xs-right">
+          <blockquote class="card-blockquote">
+            <p>Frameworks like React and Angular have made it possible to create applications for web, mobile web, native mobile and even native desktop. I'm excited about the future of the web and I look forward to continue evolving and growing in the craft.</p>
+            <!--<footer>
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>-->
+          </blockquote>
+        </div>
+        <div class="card card-block text-xs-center">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <!--<div class="card">
+          <img class="card-img img-fluid" src="..." alt="Card image">
+        </div>-->
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title hero-font">Boise State University: myBoiseState Mobile</h4>
+            <span class="badge badge-pill badge-default">Ionic</span>
+            <span class="badge badge-pill badge-primary">Angular</span>
+            <span class="badge badge-pill badge-success">iOS</span>
+            <span class="badge badge-pill badge-info">Android</span>
           </div>
-          <!--<div class="card">
-            <img class="card-img img-fluid" src="..." alt="Card image">
-          </div>-->
-          <div class="card">
-            <div class="card-block">
-              <h4 class="card-title hero-font">Boise State University: myBoiseState Mobile</h4>
-              <span class="badge badge-pill badge-default">Ionic</span>
-              <span class="badge badge-pill badge-primary">Angular</span>
-              <span class="badge badge-pill badge-success">iOS</span>
-              <span class="badge badge-pill badge-info">Android</span>
-            </div>
-          </div>
-          <div class="card card-block text-xs-right">
-            <blockquote class="card-blockquote">
-              <p class="card-text">My passion is front end development, but I have contributed to a number of .NET, Python, PHP and ExpressJS back ends.</p>
-            </blockquote>
-          </div>
+        </div>
+        <div class="card card-block text-xs-right">
+          <blockquote class="card-blockquote">
+            <p class="card-text">My passion is front end development, but I have contributed to a number of .NET, Python, PHP and ExpressJS back ends.</p>
+          </blockquote>
         </div>
       </div>
     </div>
