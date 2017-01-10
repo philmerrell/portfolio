@@ -24,7 +24,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body id="home" data-spy="scroll" data-target="#navbar" data-offset="75">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -77,15 +77,11 @@
               <a class="nav-link" href="#about-me">About Me</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </div>  
     </nav>
 
-    <div id="home" class="jumbotron parallax-window">
+    <div class="jumbotron parallax-window">
       <div class="container">
         <div class="d-flex flex-row justify-content-start align-items-center">
           <div class="p-2">
@@ -114,7 +110,7 @@
             <!--<p class="card-text">Built a responsive web application toward the Udacity Senior Web Developer Nanodegree that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.</p>-->
           </div>
           <div class="card-block">
-            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="0" type="button">
+            <button class="btn btn-block btn-info" data-toggle="modal" data-target="#projectModal" data-project-index="0" type="button">
               <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
             </button>
           </div>
@@ -131,7 +127,7 @@
             <!--<p class="card-text">Server-side code written in Python to call the Movie Database API and return a list of movies currently in theatres, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>-->
           </div>
           <div class="card-block">
-            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="1" type="button">
+            <button class="btn btn-block btn-info" data-toggle="modal" data-target="#projectModal" data-project-index="1" type="button">
               <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
             </button>
           </div>
@@ -147,7 +143,7 @@
             
           </div>
           <div class="card-block">
-            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#projectModal" data-project-index="2" type="button">
+            <button class="btn btn-block btn-info" data-toggle="modal" data-target="#projectModal" data-project-index="2" type="button">
               <i class="fa fa-window-restore" aria-hidden="true"></i> VIEW PROJECT
             </button>
           </div>
@@ -184,6 +180,20 @@
             <p class="card-text">My passion is front end development, but I have contributed to a number of .NET, Python, PHP and ExpressJS back ends.</p>
           </blockquote>
         </div>
+      </div>
+    </div>
+    <div id="about-me" class="jumbotron">
+      <div class="container">
+        <h1>About Me</h1>
+        <p class="lead">
+          My focus over the last 5 years has been primarily front end development.  Specifically, architecting single page applications with frameworks like Angular that leverage build tools to concatenate and minify sources in addition to running unit tests and other build processes.  I'm also relied upon to lead and mentor a team of developers and student developers at Boise State University. I've become practiced at communicating complicated ideas and helping other learn.
+        </p>
+        <p class="lead">
+          While I have contributed to a number of projects with varying backend technologies (.NET, Node.JS, PHP, Python), my passion lies with the browser and emerging front-end technologies. I thrive in environments where I'm able to architect front-end solutions and craft creative, testable design and UX.
+        </p>
+        <p class="lead">
+          I am truly excited to work everyday continuing to grow in the craft. I would like to create products I care about across all devices and screen sizes. I'm excited about the reach frameworks like Angular and React give developers.  I'm also looking forward to emerging web features in Progressive Web Applications.  I would be eager for an opportunity to learn and contribute to a non trivial Express/Node back end.
+        </p>
       </div>
     </div>
     
