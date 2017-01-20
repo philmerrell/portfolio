@@ -55,16 +55,15 @@ $('#android-button').click(function(event) {
             name: 'Movie Trailers',
             description: 'Built a responsive web application toward the Udacity Senior Web Developer Nanodegree that allows users to establish a meetup event. The application makes use of the latest best practices in developing high conversion web forms, including new input type elements, compound form components, data validation and handling touch input.',
             urls: {
-                website: '',
-                github: ''
+                website: 'https://philmerrell.github.io/movie-trailer-website/fresh_tomatoes.html',
+                github: 'https://github.com/philmerrell/movie-trailer-website'
             }
         },
         {
             name: 'Boise State University: Major Finder',
             description: 'Major Finder utilizes a client side build system via NPM, Bower and Grunt. Angular Material Design was used for many of the design components, which lend themselves well to both a desktop and mobile web experience.',
             urls: {
-                website: '',
-                github: ''
+                website: 'https://majors.boisestate.edu'
             }
         },
         {
@@ -85,7 +84,7 @@ $('#android-button').click(function(event) {
         },
         {
             name: 'CanOpen: Cordova Plugin',
-            description: 'This project is a concept for a mobile side menu. As the user slides the content area, menu items are animated in. It was built using the Famous JavaScript library and has collected 14 stars on Github.',
+            description: 'This plugin is useful for checking if native apps are installed on a user\'s iOS or Android device. By passing an app scheme (e.g., \'fb:\//\', \'gplus://\', \'instagram://\', etc...), CanOpen returns true if it detects the user has the corresponding native app installed. By returning false, CanOpen allows the developer the ability to implement a fallback URL–for instance, the app\'s location in the App Store, or a mobile web version of the corresponding app. The repo has been starred 22 times and forked 11 times.',
             urls: {
                 website: '',
                 github: ''
