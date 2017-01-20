@@ -5,7 +5,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phil Merrell - Portfolio</title>
-
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -43,10 +42,10 @@
             <p class="description"></p>
           </div>
           <div class="modal-footer">
-            <a class="btn btn-info" href="https://github.com/philmerrell" target="_blank">
+            <a class="btn btn-info" id="github-button" href="https://github.com/philmerrell" target="_blank">
               On Github <i class="fa fa-github" aria-hidden="true"></i>
             </a>
-            <a class="btn btn-success" href="https://github.com/philmerrell" target="_blank">
+            <a class="btn btn-success" id="website-button" href="https://github.com/philmerrell" target="_blank">
               View App <i class="fa fa-external-link-square" aria-hidden="true"></i>
             </a>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -67,9 +66,6 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="#featured-work">Featured Work</a>
             </li>
@@ -146,19 +142,6 @@
             </button>
           </div>
         </div>
-        <!--<div class="card card-block card-inverse card-primary text-xs-right">
-          <blockquote class="card-blockquote">
-            <p>Frameworks like React and Angular have made it possible to create applications for web, mobile web, native mobile and even native desktop. I'm excited about the future of the web and I look forward to continue evolving and growing in the craft.</p>
-          </blockquote>
-        </div>-->
-        <!--<div class="card card-block text-xs-center">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>-->
-        <!--<div class="card">
-          <img class="card-img img-fluid" src="..." alt="Card image">
-        </div>-->
         <div class="card">
           <div class="card-block">
             <h4 class="card-title hero-font">Boise State University: myBoiseState Mobile</h4>
@@ -174,6 +157,7 @@
           </div>
         </div>
         <div class="card">
+          <img class="card-img-top img-fluid" src="images/myboisestate.png" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title hero-font">Boise State University: myBoiseState</h4>
             <span class="badge badge-pill badge-default">Angular</span>
@@ -194,17 +178,17 @@
         </div>
       </div>
     </div>
-    <div id="about-me" class="jumbotron">
+    <div class="jumbotron about">
       <div class="container">
-        <h1 class="display-4">About Me</h1>
+        <h1 id="about-me" class="display-4">About Me</h1>
         <p class="lead">
-          My focus over the last 5 years has been primarily front end development.  Specifically, architecting single page applications with frameworks like Angular that leverage build tools to concatenate and minify sources in addition to running unit tests and other build processes.  I'm also relied upon to lead and mentor a team of developers and student developers at Boise State University. I've become practiced at communicating complicated ideas and helping other learn.
+          My focus over the last 5 years has been primarily front end development.  Specifically, architecting single page applications with frameworks that leverage build tools to concatenate and minify sources in addition to running unit tests and other build processes.  I'm also relied upon to lead and mentor a team of developers and student developers at Boise State University. I've become practiced at communicating complicated ideas and helping other learn.
         </p>
         <p class="lead">
-          While I have contributed to a number of projects with varying backend technologies (.NET, Node.JS, PHP, Python), my passion lies with the browser and emerging front-end technologies. I thrive in environments where I'm able to architect front-end solutions and craft creative, testable design and UX.
+          While I have contributed to a number of projects with varying backend technologies (.NET, Node.JS, PHP, Python), my passion lies with the browser and emerging front-end technologies. I thrive in environments where I'm able to architect front-end solutions and create testable design and UX.
         </p>
         <p class="lead">
-          I am truly excited to work everyday continuing to grow in the craft. I would like to create products I care about across all devices and screen sizes. I'm excited about the reach frameworks like Angular and React give developers.  I'm also looking forward to emerging web features in Progressive Web Applications.  I would be eager for an opportunity to learn and contribute to a non trivial Express/Node back end.
+          I am truly excited to work everyday continuing to grow in the craft. I would like to create products I care about across all devices and screen sizes. I'm excited about the reach frameworks like Angular and React give developers.  I'm also looking forward to emerging web features in Progressive Web Applications. I look forward to evolving with the growing complexity of front-end development.
         </p>
       </div>
     </div>

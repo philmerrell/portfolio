@@ -27,15 +27,15 @@ body {
 }
 
 .parallax-window {
-    background-image: url(../images/linkedin.jpg);
+    background-image: url(../images/mountain.jpg);
     background-size: cover;
 }
 
-#about-me {
-    background-color:rgba(255, 255, 255, 0.5);
-    background-image: url(../images/mountain.jpg);
+.about {
+    background-image: url(../images/horizon.jpg);
     background-size: cover;
-    
+    background-position: center;
+    color: #fff;
 }
 
 
@@ -56,7 +56,7 @@ body {
 
 .jumbotron {
     h1, p {
-        text-shadow: 2px 2px 0 #fff;
+        // text-shadow: 2px 2px 0 #fff;
     }
 
     @include media-breakpoint-only(xs) {
@@ -66,6 +66,12 @@ body {
         .lead {
             font-size: 1rem;
         }
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    .card {
+        margin-bottom: 20px;
     }
 }
 
