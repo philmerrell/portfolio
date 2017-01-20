@@ -1,21 +1,46 @@
+var project = {};
+
 $(document).ready(function() {
     $('#projectModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
         var projectIndex = button.data('project-index') // Extract info from data-* attributes
 
-        var project = projects[parseInt(projectIndex)];
+        project = projects[parseInt(projectIndex)];
         var modal = $(this);
         modal.find('.modal-title').text(project.name);
         modal.find('.description').text(project.description);
 
         var websiteButton = modal.find('#website-button');
         var githubButton = modal.find('#github-button');
+        var iosButton = modal.find('#ios-button');
+        var androidButton = modal.find('#android-button');
 
         (project.urls.website) ? websiteButton.show() : websiteButton.hide();
         (project.urls.github) ? githubButton.show() : githubButton.hide();
-        
-        
+        (project.urls.ios) ? iosButton.show() : iosButton.hide();
+        (project.urls.android) ? androidButton.show() : androidButton.hide();
+                
     });
+
+$('#website-button').click(function(event) {
+    window.open(project.urls.website, "_blank");
+    return false;
+});
+
+$('#github-button').click(function(event) {
+    window.open(project.urls.github, "_blank");
+    return false;
+});
+
+$('#ios-button').click(function(event) {
+    window.open(project.urls.ios, "_blank");
+    return false;
+});
+
+$('#android-button').click(function(event) {
+    window.open(project.urls.android, "_blank");
+    return false;
+});
 
     var projects = [
         {
@@ -46,8 +71,8 @@ $(document).ready(function() {
             name: 'Boise State University: myBoiseState Mobile',
             description: 'MyBoiseState Mobile is built for students and employees at Boise State University. It is a hybrid mobile application built with Ionic and is available on both the iOS AppStore and Google Play and leverages device features such as push notifications. This app\'s primary purpos is to serve as a portal that ties data from many different sources across the university into a single, easy to use platform.',
             urls: {
-                ios: '',
-                android: ''
+                ios: 'https://itunes.apple.com/us/app/myboisestate/id959007690?mt=8',
+                android: 'https://play.google.com/store/apps/details?id=edu.myboisestate.app&hl=en'
             }
         },
         {
