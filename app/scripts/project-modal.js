@@ -84,7 +84,7 @@ $('#android-button').click(function(event) {
             }
         },
         {
-            name: 'Famous Menu Example',
+            name: 'CanOpen: Cordova Plugin',
             description: 'This project is a concept for a mobile side menu. As the user slides the content area, menu items are animated in. It was built using the Famous JavaScript library and has collected 14 stars on Github.',
             urls: {
                 website: '',
