@@ -68,7 +68,7 @@ $('#android-button').click(function(event) {
         },
         {
             name: 'Boise State University: myBoiseState Mobile',
-            description: 'MyBoiseState Mobile is built for students and employees at Boise State University. It is a hybrid mobile application built with Ionic and is available on both the iOS AppStore and Google Play and leverages device features such as push notifications. This app\'s primary purpos is to serve as a portal that ties data from many different sources across the university into a single, easy to use platform.',
+            description: 'MyBoiseState Mobile is built for students and employees at Boise State University. It is a hybrid mobile application built with Ionic and is available on both the iOS AppStore and Google Play and leverages device features such as push notifications. This app\'s primary purpose is to serve as a portal that ties data from many different sources across the university into a single, easy to use platform.',
             urls: {
                 ios: 'https://itunes.apple.com/us/app/myboisestate/id959007690?mt=8',
                 android: 'https://play.google.com/store/apps/details?id=edu.myboisestate.app&hl=en'
@@ -78,16 +78,22 @@ $('#android-button').click(function(event) {
             name: 'Famous Menu Example',
             description: 'This project is a concept for a mobile side menu. As the user slides the content area, menu items are animated in. It was built using the Famous JavaScript library and has collected 14 stars on Github.',
             urls: {
-                website: '',
-                github: ''
+                website: 'http://philmerrell.github.io/Famous-Menu-Example/',
+                github: 'https://github.com/philmerrell/Famous-Menu-Example'
             }
         },
         {
             name: 'CanOpen: Cordova Plugin',
             description: 'This plugin is useful for checking if native apps are installed on a user\'s iOS or Android device. By passing an app scheme (e.g., \'fb:\//\', \'gplus://\', \'instagram://\', etc...), CanOpen returns true if it detects the user has the corresponding native app installed. By returning false, CanOpen allows the developer the ability to implement a fallback URL–for instance, the app\'s location in the App Store, or a mobile web version of the corresponding app. The repo has been starred 22 times and forked 11 times.',
             urls: {
-                website: '',
-                github: ''
+                github: 'https://github.com/philmerrell/CanOpen'
+            }
+        },
+        {
+            name: 'Boise State University: myBoiseState',
+            description: 'MyBoiseState is a responsive web app for students and employees at Boise State University. This single page application leverages Bootstrap and Angular 1.x. and features Grunt-based build automation, which concatenates and minifies files in addition to running unit tests. It is a companion app to myBoiseState mobile, which is available in both app stores.',
+            urls: {
+                website: 'https://my.boisestate.edu'
             }
         }
     ];
