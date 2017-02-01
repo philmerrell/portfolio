@@ -14,7 +14,7 @@ $brand-danger:              #d9534f;
 body {
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
-    background: #f8f8f8;
+    background: #eee;
 }
 
 footer {
@@ -35,9 +35,24 @@ footer {
     border: 3px solid #fff;
 }
 
-.parallax-window {
+.intro {
     background-image: url(../images/mountain.jpg);
     background-size: cover;
+    
+    h1 {
+        text-shadow: 2px 2px 0 #fff
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .mobile-backdrop {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255,255,255,0.7);
+    }
 }
 
 .about {
@@ -65,9 +80,6 @@ footer {
 }
 
 .jumbotron {
-    h1, p {
-        // text-shadow: 2px 2px 0 #fff;
-    }
 
     @include media-breakpoint-only(xs) {
         .display-4 {
@@ -98,4 +110,9 @@ footer {
     @include media-breakpoint-only(xl) {
         column-count: 3;
     }
+}
+
+footer {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
 }
